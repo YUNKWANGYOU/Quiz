@@ -1,17 +1,14 @@
-d = []
-cnt = 0
+sum = []
 
 while True:
-
     try :
-        a,b = input().split()
-        c = int(a) + int(b)
-        d.append(c)
-        cnt += 1
-
+        a,b = input().split(" ")
     except :
         break
 
-for k in range(0,cnt):
-    print(d[k])
+    c = int(a) + int(b)
+    sum.append(c)
 
+
+for i in sum :
+     print(i)

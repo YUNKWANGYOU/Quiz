@@ -1,10 +1,19 @@
-i = input()
-d = []
+n = input()
 
-for j in range(0,int(i)):
-    a,b = input().split()
+sum = []
+
+for i in range(int(n)) :
+
+    try:
+        a,b = input().split(" ")
+
+    except :
+        break
+
     c = int(a) + int(b)
-    d.append(c)
 
-for k in range(0,int(i)):
-    print("Case #{}:".format(k+1),d[k])
+    sum.append(c)
+
+
+for i in range(int(n)) :
+     print("Case #"+str(i+1)+": " + str(sum[i]))

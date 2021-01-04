@@ -1,10 +1,11 @@
-i = input()
-d = []
+n = int(input())
+sum = []
 
-for j in range(0,int(i)):
-    a,b = input().split()
+for i in range(1,n+1) :
+    a,b = input().split(" ")
     c = int(a) + int(b)
-    d.append(c)
+    sum.append(c)
 
-for k in range(0,int(i)):
-    print(d[k])
+
+for i in sum :
+     print(i)
