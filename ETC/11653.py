@@ -19,17 +19,17 @@ for i in range(1,n+1) :
     if prime(i) :
         list.append(i)
 
-print(list)
+i = 0
 
 while 1 :
-    i = 0
     try :
         if n%list[i] == 0 :
-            n = n/list[i]
+            n = int(n/list[i])
             print(list[i])
-        elif n == 1 :
-            break
-        else :
-            i+=1
+        elif n%list[i] != 0 :
+            i = i + 1
     except :
-        print(n)
+        sys.stdout.write("소인수분해 할 수 없습니다.\n")
+
+    if n == 1 :
+        break
