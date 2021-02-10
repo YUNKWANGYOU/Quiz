@@ -9,7 +9,7 @@ for _ in range(n) :
     command = sys.stdin.readline()
 
     if command.split()[0] == 'push' and len(command.split()) == 1 :
-        print("스택에 넣으실 숫자를 입력해주세요.")
+        print("큐에 넣으실 숫자를 입력해주세요.")
 
     if command.split()[0] == 'push' and len(command.split()) == 2 :
         list.append(command.split()[1])
