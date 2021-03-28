@@ -27,15 +27,19 @@ check = [0]*2505
 sound = ['q','u','a','c','k']
 duck = 0
 
+flag = 0
+
 for i in range(len(sen)) :
     if sen[i] == 'q' and check[i] == 0 :
         go(0,i,0)
 for i in range(len(sen)) :
     if check[i] == 0 :
-        print(-1)
+        flag = 1
 
 if duck == 0 or len(sen)%5 != 0 :
-    print(-1)
+    flag = 1
 
-
-print(duck)
+if flag :
+    print(-flag)
+else :
+    print(duck)
