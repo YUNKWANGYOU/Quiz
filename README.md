@@ -1,22 +1,127 @@
-# PythonQuiz
-백준의 다양한 문제들을 직접 풀어보고 정리한 장소 
+# Project Mazassumnida
 
-BaekJoon Quiz
+Github 프로필에서 boj 프로필을 이쁘게 보여주는 프로젝트
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=koosaga)](https://github.com/mazassumnida/mazassumnida)
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=Malkoring)](https://solved.ac/malkoring)
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/generate_badge?boj=ccoco&c=c)](https://solved.ac/ccoco)
+
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=strawJI)](https://solved.ac/strawji)
 
 
-입출력 - 2557, 1000, 2558, 10950, 10951, 10952, 10953, 11021, 11022, 11718, 11719, 11720, 11721, 2741, 2742, 2739, 1924, 8393, 10818, 2438, 2439, 2440, 2441, 2442, 2445, 2522, 2446, 10991, 10992
+만약 로드된 후 애니메이션을 다시 보고싶으시면 `ctrl + shift + R` 을 눌러서 강력 새로고침을 하시면 다시 보실 수 있습니다!
 
-DP - 1463, 11726, 11727, 9095, 10844, 11057, 2193, 9465, 2156(거의 다품), 11053, 11055, 11722, 11054, 1912, 2579, 1699, 2133, 9461, 2225, 2011, 11052
 
-이런 저런 - 2751, 11650, 11651, 10814, 10825, 10989, 11652, 11004, 10828, 9012, 10799, 10845, 10866, 10808, 10809, 10820, 2743, 11655, 10824, 11656, 1406, 1158, 1168, 10430, 2609, 1934, 1850, 9613, 11005, 2745, 1373, 1212, 2089, 11576, 1978, 1929, 6588, 11653, 10872, 1676, 2004,10821
+## install
 
-그래프 - 1260, 11724, 1707, 10451, 2331, 9466, 2667, 4963, 7576, 2178 , 2146, 1991, 11725, 1167, 1967
+### Poetry를 이용할 경우
 
-이분탐색/삼분탐색 - 1654, 2805, 2110, 10815, 10816, 11662
+```sh
+poetry install             # 의존성 설치
+poetry shell               # 가상환경에 진입
+python manage.py runserver # 서버 실행
+```
 
-분할정복 - 11728, 1780, 11729, 1992, 2447, 2448, 1517(잘 모르겠음), 2261(모르겠음)
+### requirements.txt를 이용할 경우
 
-그리디 - 11047, 2875, 10610, 1783, 1931, 11399, 2873, 1744
+```sh
+pip install -r requirements.txt
+python manage.py runserver # 서버 실행
+```
 
-완전탐색 - 1476, 1107, 1451, 9095, 10819, 10971, 1697, 1963(잘모르겠다..), 9019, 1525(잘 모르겠음), 2251, 2186, 3108, 5014, 1759, 2580, 1987, 6603, 1182, 2003, 1806, 1644, 1261, 1208, 7453, 2632, 2143, 2557
+## Mazassumnida v.1.0
 
+### Usage
+
+```html
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/generate_badge?boj={handle})](https://solved.ac/{handle})
+```
+
+### Screenshots
+
+#### Ruby 🍒
+<img src="https://i.ibb.co/LZGnH5R/2020-08-26-2-02-58.png" alt="2020-08-26-2-02-58" border="0">
+
+#### Diamond 💎
+<img src="https://i.ibb.co/0cjvjGn/2020-08-26-2-03-10.png" alt="2020-08-26-2-03-10" border="0">
+
+#### Platinum 💚
+<img src="https://i.ibb.co/4VnmL99/2020-08-26-2-10-40.png" alt="2020-08-26-2-10-40" border="0">
+
+#### Gold 🏅
+<img src="https://i.ibb.co/88n5MR4/2020-08-26-2-03-56.png" alt="2020-08-26-2-03-56" border="0">
+
+#### Silver 💍
+<img src="https://i.ibb.co/mXhLMHJ/2020-08-26-2-03-30.png" alt="2020-08-26-2-03-30" border="0">
+
+#### Bronze 🍂
+<img src="https://i.ibb.co/4tpFkR5/2020-08-26-2-03-40.png" alt="2020-08-26-2-03-40" border="0">
+
+
+
+## Mazassumnida v.2.0
+
+### Usage
+
+```html
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj={handle})](https://solved.ac/{handle})
+```
+
+### Screenshots
+
+#### Ruby 🍒
+<img src="https://i.ibb.co/C6gc9jD/chrome-h1796lob-Nu.png" alt="chrome-h1796lob-Nu" border="0">
+
+#### Diamond 💎
+<img src="https://i.ibb.co/W0DTqfF/chrome-0s-RCb-MPg-Ia.png" alt="chrome-s-Xr44t-S85-B" border="0">
+
+#### Platinum 💚
+<img src="https://i.ibb.co/HpHCVXG/chrome-0-LDwg6-Mgw-Y.png" alt="chrome-0-LDwg6-Mgw-Y" border="0">
+
+#### Gold 🏅
+<img src="https://i.ibb.co/WfkLNRQ/chrome-y-AXSQ9j-Z9t.png" alt="chrome-y-AXSQ9j-Z9t" border="0">
+
+#### Silver 💍
+<img src="https://i.ibb.co/0rvb2LZ/chrome-q-Fhu-Ge92-Jp.png" alt="chrome-PZp-C0lw-NXK" border="0">
+
+#### Bronze 🍂
+<img src="https://i.ibb.co/Vg2NcZH/chrome-VBCSLd8v-HF.png" alt="chrome-VBCSLd8v-HF" border="0">
+
+
+
+## Mazassumnida v.mini
+
+### Usage
+
+```html
+[![Solved.ac
+프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj={handle})](https://solved.ac/{handle})
+```
+
+### Screenshots
+
+#### Ruby 🍒
+<img src="https://i.ibb.co/JKncFX1/20200830-00-03-45.png" alt="20200830-00-03-45" border="0">
+
+#### Diamond 💎
+<img src="https://i.ibb.co/tJg1mMV/20200830-00-04-09.png" alt="20200830-00-04-09" border="0">
+
+#### Platinum 💚
+<img src="https://i.ibb.co/16SYvHd/20200830-00-04-24.png" alt="20200830-00-04-24" border="0">
+
+#### Gold 🏅
+<img src="https://i.ibb.co/nfJDBKY/20200830-00-03-26.png" alt="20200830-00-03-26" border="0">
+
+#### Silver 💍
+<img src="https://i.ibb.co/Q6SRDZ4/20200830-00-04-37.png" alt="20200830-00-04-37" border="0">
+
+#### Bronze 🍂
+<img src="https://i.ibb.co/tBW5WbQ/20200830-00-04-51.png" alt="20200830-00-04-51" border="0">
