@@ -1,18 +1,8 @@
 # Project Mazassumnida
 
-Github 프로필에서 boj 프로필을 이쁘게 보여주는 프로젝트
 
 [![Solved.ac
-프로필](http://mazassumnida.wtf/api/mini/generate_badge?boj=koosaga)](https://github.com/mazassumnida/mazassumnida)
-
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=Malkoring)](https://solved.ac/1996yyk)
-
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/generate_badge?boj=ccoco&c=c)](https://solved.ac/1996yyk)
-
-[![Solved.ac
-프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=strawJI)](https://solved.ac/1996yyk)
+프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=1996yyk)](https://solved.ac/1996yyk)
 
 
 만약 로드된 후 애니메이션을 다시 보고싶으시면 `ctrl + shift + R` 을 눌러서 강력 새로고침을 하시면 다시 보실 수 있습니다!
