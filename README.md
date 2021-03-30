@@ -3,7 +3,7 @@
 [![Solved.ac
 프로필](http://mazassumnida.wtf/api/v2/generate_badge?boj=1996yyk)](https://solved.ac/1996yyk)
 
-BaekJoon Quiz
+<b>BaekJoon Quiz</b>
 
 |Algorithm|Solved Problem|
 |------|---|
