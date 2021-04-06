@@ -10,8 +10,8 @@ def backtracking(index,start,n,m):
         if visited[i] == 0 :
             visited[i] = 1
             res.append(i+1)
-            backtracking(index+1,i+1,n,m)
-            visited[i] = 0
+            backtracking(index+1,i+1,n,m) #탐색 시작 (i+1부터 n까지만)
+            visited[i] = 0 #탐색 완료
             res.pop()
 
 n,m = map(int,sys.stdin.readline().split())
