@@ -18,3 +18,127 @@
 |STRING|1181, 1316, 3029, 4659, 9046, 10798, 11365, 16171, 20154|
 |IMPLEMENTATION|1244, 1913, 1996, 2072, 2578, 4386, 5597, 9093, 10994, 12933, 16926, 20053, 20291, 20546|
 
+### 파이썬
+* 2차원 배열 합
+```python
+sum(sum(board, []))
+```
+* 2차원 배열 90도 회전
+```python
+def rotate(board):
+    return list(map(list, zip(*board[::-1])))
+```
+* 2차원 배열 행 열 뒤집기
+```python
+def flip(board):
+    return list(map(list, zip(*board)))
+```
+* 정렬 key
+```python
+return [i[3] for i in sorted(answer, key=lambda x : (-x[0],-x[1], -x[2], x[3]))]
+```
+* 정규표현식
+```python
+import re
+
+def solution(new_id):
+    st = new_id
+    st = re.sub('[^a-z0-9\-_.]', '', st.lower())
+    st = re.sub('\.+', '.', st)
+    st = re.sub('^[.]|[.]$', '', st)
+    st = re.sub('[.]$', '', st[:15]) if len(st) else 'a'
+    return st + ''.join([st[-1] for i in range(3-len(st))])
+```
+* 필터
+```python
+list(filter(lambda u: u["sex"] == 'M', users))
+
+[user for user in users if user["sex"] == 'M']
+```
+* 이진탐색 - 오름차순으로 정렬된 리스트에서 특정한 값의 위치를 찾는 알고리즘
+```python
+import bisect
+mylist = [1, 2, 3, 7, 9, 11, 33]
+print(bisect.bisect(mylist, 3))
+```
+* 두 배열의 같은 자리 값을 합한 배열
+```python
+ret = [x + y for x, y in zip(a, b)]
+```
+* 이중 for문 한줄
+```python
+arr = []
+for i in v:
+    for j in i:
+        arr.append(j)
+
+arr = [j for i in v for j in i]
+```
+* 정규식 연속 중복 문자 제거
+```python
+import re
+
+
+test = 'abbbsdfcdZZZZ11111)'
+test0 = re.sub('(([a-zA-Z0-9])\\2*)', '', test) # 연속된 같은 문자 변환 (1개이상)
+test1 = re.sub('(([a-zA-Z0-9])\\2+)', '', test) # 연속된 같은 문자 변환 (2개이상)
+test2 = re.sub('(([a-zA-Z0-9])\\2{2,})', '', test) # 연속된 같은 문자 변환 (3개이상)
+test3 = re.sub('(([a-zA-Z0-9])\\2{3,})', '', test) # 연속된 같은 문자 변환 (4개이상)
+test4 = re.sub('(([a-zA-Z0-9])\\2{4,})', '', test) # 연속된 같은 문자 변환 (5개이상)
+
+print(test1) 
+print(test2)  
+print(test3)
+print(test4)
+
+########결과########
+asdfcd)
+asdfcd)
+abbbsdfcd)
+abbbsdfcdZZZZ)
+
+```
+
+```python
+def no_continuous(s):
+    a = []
+    for i in s:
+        if a[-1:] != [i]:
+            a.append(i)
+    return a 
+```
+```python
+class LoopBreak(Exception):
+    pass
+
+try:
+    for i in range(5):
+        for j in range(5):
+            if i == 1 and j == 1:
+                raise LoopBreak()
+except LoopBreak:
+    pass
+```
+* 달팽이
+```python
+def solution(n, m, board):
+    answer = [n // 2 + 1, n // 2 + 1]
+    dy = [0, 1, 0, -1]
+    dx = [1, 0, -1, 0]
+    y = x = n // 2
+    num, length = 1, 0
+    board[y][x] = num
+    while y != -1 or x != -1:
+        for d in range(4):
+            for _ in range(length):
+                y += dy[d]
+                x += dx[d]
+                num += 1
+                board[y][x] = num
+                if num == m:
+                    answer = [y + 1, x + 1]
+        y -= 1
+        x -= 1
+        length += 2
+    return answer
+```
