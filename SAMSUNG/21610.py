@@ -6,16 +6,18 @@ dy = [0,0,-1,-1,-1,0,1,1,1]
 
 def make_cloud(cloud) :
     # 현재 구름인 곳을 제외한 인덱스 구하기
-    tmp = cloud
-    cloud = []
+    tmp = []
+    c=[[False]*n for _ in range(n)]
 
+    for i in cloud :
+        c[i[0]][i[1]] = True
     for i in range(n) :
         for j in range(n) :
-            if [i,j] not in tmp :
-                if basket[i][j] >= 2 :
-                    cloud.append([i,j])
-                    basket[i][j] -= 2
-    return cloud
+            if not c[i][j] and basket[i][j] >= 2 :
+                tmp.append([i,j])
+                basket[i][j] -= 2
+
+    return tmp
 
 def cnt_cross(c) :
     cx = [-1,-1,1,1]
@@ -45,11 +47,10 @@ def makeitrain(cloud) :
 
 
 # 얕은복사여서 얘 변하게하면 같이변함
-def move_cloud(cloud,dir,cnt) :
+def move_cloud(cloud, dir, cnt):
     # 옮긴 후에 비 내리게 함
-    for i in range(cnt) :
-        for j in cloud :
-            j[0],j[1] = (j[0]+dy[dir]+n)%n,(j[1]+dx[dir]+n)%n
+    for i in cloud:
+        i[0], i[1] = (i[0] + dy[dir] * cnt + n) % n, (i[1] + dx[dir] * cnt + n) % n
     makeitrain(cloud)
 
 def solution() :
